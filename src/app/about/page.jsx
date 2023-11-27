@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function page() {
+export default function about() {
   return (
-    <div>About page</div>
+    <div>About my library</div>
   )
 }

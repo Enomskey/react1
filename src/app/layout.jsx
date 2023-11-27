@@ -1,9 +1,11 @@
-import { Inter } from 'next/font/google'
+import { Glass_Antiqua } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const sly = Glass_Antiqua({ 
+  subsets: ['latin'], 
+  weight: ['400'] })
 
 export const metadata = {
   title: 'Beginners React class ',
@@ -14,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={sly.className}>
         <Navbar />
         <div className=' min-h-[70vh]'> 
 
